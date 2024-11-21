@@ -1,7 +1,7 @@
 {
   "name": "id32",
   "version": "1.0.1",
-  "description": "32-character Base32 IDs",
+  "description": "32-character RFC 4648 lowercase Base32 IDs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

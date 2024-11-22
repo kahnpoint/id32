@@ -1,22 +1,20 @@
 {
-  "name": "id32",
-  "version": "1.0.2",
-  "description": "32-character RFC 4648 lowercase Base32 IDs",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "id32-test",
+  "version": "VERSION",
+  "description": "DESCRIPTION",
   "scripts": {
-    "build": "npm install && tsc",
-    "prepublishOnly": "npm run build"
+    "test": "tsx test.ts"
   },
   "keywords": [
     "id",
+    "id32",
     "uuid",
     "nanoid",
-    "base32",
-    "typescript"
+    "base32"
   ],
   "author": {
     "name": "kahnpoint",
+    "email": "96557890+kahnpoint@users.noreply.github.com",
     "url": "https://github.com/kahnpoint"
   },
   "repository": {
@@ -25,7 +23,7 @@
   },
   "license": "MPL-2.0",
   "dependencies": {
-    "@scure/base": "^1.1.9"
+    "id32": "VERSION"
   },
   "devDependencies": {
     "typescript": "5.6.3"

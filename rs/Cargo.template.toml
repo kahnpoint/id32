@@ -1,0 +1,13 @@
+[package]
+name = "id32"
+version = "VERSION"
+description = "DESCRIPTION"
+edition = "2021"
+license = "MPL-2.0"
+author = "kahnpoint"
+email = "96557890+kahnpoint@users.noreply.github.com"
+repository = "https://github.com/kahnpoint/id32"
+keywords = ["id", "id32", "uuid", "nanoid", "base32"] 
+
+[dependencies]
+rand_core = { version = "0.6.4", features = ["getrandom"] }

@@ -12,9 +12,11 @@ gen:
 	sed 's/VERSION/$(VERSION)/g; s/DESCRIPTION/$(DESCRIPTION)/g' tests/js/package.template.json > tests/js/package.json
 	sed 's/VERSION/$(VERSION)/g; s/DESCRIPTION/$(DESCRIPTION)/g' tests/rs/Cargo.template.toml > tests/rs/Cargo.toml
 
-	cat README.md py/py.template.md > py/README.md
-	cat README.md rs/rs.template.md > rs/README.md
-	cat README.md js/js.template.md > js/README.md
+	# Create READMEs with section headers
+	cat README.template.md > README.md
+	(echo "\n## Javascript\n"; cat js/js.template.md) >> README.md
+	(echo "\n## Python\n"; cat py/py.template.md) >> README.md
+	(echo "\n## Rust\n"; cat rs/rs.template.md) >> README.md
 	
 	cp LICENSE py/LICENSE
 	cp LICENSE js/LICENSE

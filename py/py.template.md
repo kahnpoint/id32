@@ -1,9 +1,8 @@
-## Installation
+### Installation
 ```bash
 pip install id32
 ```
-
-## Usage
+### Usage
 ```python
 from id32 import id32
 
